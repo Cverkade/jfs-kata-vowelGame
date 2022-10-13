@@ -1,46 +1,31 @@
 # Salt Kata Series
 
-## <The kata name>
+## Vowels
 
-### A. Scenario
+This kata is a simple game of splitting and mixing words by the first vowel.
 
-Being a software developer involves a lot of logical problem solving and being able to do that in a readable and well structured manner. You should also be able to test your logic to make sure it runs as expected even if you were to refactor your code or make additions to it.
+Some examples
 
-### B. What you will be working on
+Word 1 | Word 2 | Result 1 | Result 2
+:---:  | :---:  | :---:    | :---:
+towel  | car    | tor      | cawel
+apple  | melon  | alon     | mepple
+black  | white  | blate    | whick
+mms    | sms    | mms      | sms
 
-Today you will be completing <a kata> exercise and at the end of it you will
+## Constraints
 
-- Have gained even more understanding of `Java`syntax and structure
-- Have gotten better at unit testing and be comfortable with using `jUnit`
-- More objectives here
+### Interface
+Create a Class called vowels that has a public method that transforms input according to te specification above.  It should take _two parameters_ - one for each word that should be transformed.vThe input parameters must be words with the characters from the english alphabet.
+No spaces or special characters are allowed, but, empty strings are allowed.
 
+The output of the `transform` method should be _an array with two items_, which are the tranformations of the two input parameters.
+All output items should be lower case strings.
 
-### C. Setup
+### Errors
 
-1. Open intellij and create a new project by
-    1. choosing maven project optionally set your group and artifact id's
-    2. opening this directory and add framework support -> maven
-2. Create a new java class ( cmd + N ) called `se.salt.jfs.kata.<name>`
-3. Generate a new Test (cmd + N )for the class and choose jUnit5 as the option
-4. Add the Junit jar as a maven dependency (option + enter) and also add the `junit-jupiter-engine` dependency
-5. Add a test method ( cmd + N) and make sure you can run it ( ctrl + shift + R)
-6. open a terminal and run `mvn clean test`
+The ethod should report any errors (including bad input) to the client by throwing.
 
-
-### D. Lab instructions
-
-Overview of excercise goes here
-
-
-
-
-#### The Kata
-
-The instructions for the kata itselo , e.g 
-  
-> Create a function that takes a number representing the index of the sequence and returns the fibonacci value for that number. I.e if you pass it 7, it should return 13
-
- 
 
 #### TDD
 
